@@ -35,7 +35,8 @@
     vc.navigationItem.rightBarButtonItem = done;
     
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:navVC animated:YES
+    [self presentViewController:navVC
+                       animated:YES
                   animatorClass:[TransitionAnimator class]
                      completion:nil];
 }
